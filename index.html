@@ -34,12 +34,16 @@
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
+        
+        .video-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
@@ -119,9 +123,22 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <div class="relative">
+                    <div class="relative group">
+                        <!-- Decorative Frame -->
                         <div class="absolute -top-4 -left-4 w-full h-full border-2 border-secondary rounded-2xl"></div>
-                        <img src="https://images.unsplash.com/photo-1576091727342-bfda17849973?auto=format&fit=crop&q=80" alt="Counseling Environment" class="relative z-10 rounded-2xl shadow-xl w-full h-[450px] object-cover">
+                        
+                        <!-- Video Player -->
+                        <div class="relative z-10 rounded-2xl overflow-hidden bg-black aspect-video video-shadow">
+                            <video 
+                                controls 
+                                preload="metadata"
+                                poster="image_76ecdd.png"
+                                class="w-full h-full object-cover">
+                                <source src="Healing_the_Family.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="relative z-10 mt-4 text-center text-xs text-slate-400 font-bold uppercase tracking-widest">Featured: Healing the Family</p>
                     </div>
                 </div>
                 <div class="md:w-1/2">
@@ -145,7 +162,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-slate-50 rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
                 
-                <!-- Contact Info Sidebar -->
+                <!-- Contact Sidebar -->
                 <div class="lg:w-2/5 bg-[#f8f4eb] p-12 text-primary">
                     <h3 class="text-3xl font-bold mb-6">Connect With Us</h3>
                     <p class="text-slate-700 font-medium mb-12">Take the first step toward healing. Reach out via phone, email, or by filling out the inquiry form.</p>
@@ -176,7 +193,6 @@
                     </div>
                 </div>
 
-                <!-- Appointment Inquiry Form -->
                 <div class="lg:w-3/5 p-12 bg-white">
                     <h3 class="text-2xl font-bold mb-6 text-primary">Inquiry Form</h3>
                     <form class="space-y-5">
@@ -207,7 +223,6 @@
                             <label class="block text-sm font-bold text-slate-700 mb-2">How can we help?</label>
                             <textarea name="message" rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-secondary/20 outline-none transition" placeholder="Briefly describe what you're looking for..."></textarea>
                         </div>
-                        <!-- Updated button background to medium grey (slate-500) -->
                         <a href="mailto:bkhawkins@hawkinscounseling.net" class="block w-full bg-slate-500 text-white py-4 rounded-xl font-bold hover:bg-slate-600 transition shadow-lg text-lg text-center">
                             Send Message
                         </a>
