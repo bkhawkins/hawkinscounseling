@@ -50,25 +50,35 @@
                     <div class="text-primary font-bold text-xl tracking-wider uppercase">Hawkins Counseling</div>
                 </div>
                 <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-8"> 
+                  <div class="ml-10 flex items-baseline space-x-8"> 
             <a href="#home" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Home</a> 
             <a href="#specialties" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Specialties</a> 
             <a href="#about" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">About</a> 
             <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Video Resources</a> 
-            <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Book Now</a> 
+            <a href="https://carepatron.com" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Book Now</a> 
           </div> 
         </div> 
       </div> 
     </div> 
-    <!-- Mobile Links Container (Shows up beautifully on phones) --> 
-    <div class="md:hidden w-full bg-white px-2 pt-2 pb-4 space-y-2 flex flex-col border-t border-slate-100 mt-2"> 
-      <a href="#home" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
-      <a href="#specialties" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
-      <a href="#about" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
-      <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Video Resources</a> 
-      <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
+    
+    <!-- Pure HTML Mobile Dropdown Menu Logic -->
+    <div class="md:hidden absolute right-4 top-5 group">
+      <!-- The visible toggle button inside header -->
+      <button class="text-primary p-2 focus:outline-none focus:ring-2 focus:ring-primary rounded-lg border border-slate-200 bg-white shadow-sm flex items-center gap-2">
+        <i class="fas fa-bars text-xl"></i>
+        <span class="text-xs font-bold uppercase tracking-wider">Menu</span>
+      </button>
+      
+      <!-- The menu layout. It pops open automatically when someone hovers or clicks/taps near it -->
+      <div class="hidden group-hover:flex group-focus-within:flex flex-col absolute right-0 top-full mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 space-y-2 z-50"> 
+        <a href="#home" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
+        <a href="#specialties" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
+        <a href="#about" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
+        <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Video Resources</a> 
+        <a href="https://carepatron.com" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
+      </div>
     </div>
-        </div>
+
     </nav>
 
     <!-- Hero Section -->
