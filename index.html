@@ -70,15 +70,27 @@
         <span class="text-xs font-bold uppercase tracking-wider">Menu</span>
       </button>
       
-      <!-- The mobile links container dropdown -->
-      <div class="hidden group-hover:flex group-focus-within:flex flex-col absolute right-0 top-full mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 space-y-2 z-50"> 
-        <a href="#home" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
-        <a href="#specialties" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
-        <a href="#about" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
-        <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Video Resources</a> 
-        <a href="#contact" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Connect</a>
-        <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
+       <!-- The mobile links container dropdown --> 
+      <div id="mobileDropdownMenu" class="hidden group-hover:flex group-focus-within:flex active:hidden flex-col absolute right-0 top-full mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 space-y-2 z-50"> 
+        <a href="#home" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
+        <a href="#specialties" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
+        <a href="#about" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
+        <a href="#videos" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Video Resources</a> 
+        <a href="#contact" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Connect</a> 
+        <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
       </div>
+
+      <script>
+        function collapseMenu() {
+          const menu = document.getElementById('mobileDropdownMenu');
+          if (menu) {
+            // Momentarily removes visibility styles to break the stuck focus on mobile
+            menu.style.display = 'none';
+            setTimeout(() => { menu.style.display = ''; }, 300);
+          }
+        }
+      </script>
+
     </div>
 
     </div>
