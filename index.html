@@ -70,32 +70,39 @@
         <span class="text-xs font-bold uppercase tracking-wider">Menu</span>
       </button>
       
-       <!-- The mobile links container dropdown --> 
-      <div id="mobileDropdownMenu" class="hidden group-hover:flex group-focus-within:flex active:hidden flex-col absolute right-0 top-full mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 space-y-2 z-50"> 
-        <a href="#home" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
-        <a href="#specialties" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
-        <a href="#about" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
-        <a href="#videos" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Video Resources</a> 
-        <a href="#contact" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Connect</a> 
-        <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" onclick="collapseMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
+            <!-- The mobile links container dropdown --> 
+      <div id="mobileDropdownMenu" class="hidden flex-col absolute right-0 top-full mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 space-y-2 z-50"> 
+        <a href="#home" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
+        <a href="#specialties" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
+        <a href="#about" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
+        <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Video Resources</a> 
+        <a href="#contact" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Connect</a> 
+        <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
       </div>
 
       <script>
-        function collapseMenu() {
+        // Connects your menu button directly to the open/close function
+        const menuBtn = document.querySelector('.md\\:hidden.absolute.right-4.top-5 button');
+        if (menuBtn) {
+          menuBtn.setAttribute('onclick', 'toggleMenu()');
+        }
+
+        function toggleMenu() {
           const menu = document.getElementById('mobileDropdownMenu');
           if (menu) {
-            // Momentarily removes visibility styles to break the stuck focus on mobile
-            menu.style.display = 'none';
-            setTimeout(() => { menu.style.display = ''; }, 300);
+            if (menu.classList.contains('hidden')) {
+              menu.classList.remove('hidden');
+              menu.classList.add('flex');
+            } else {
+              menu.classList.remove('flex');
+              menu.classList.add('hidden');
+            }
           }
         }
       </script>
-
     </div>
-
-    </div>
-
-    </nav>
+  </div> 
+</nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-center text-white px-4 pt-20">
