@@ -3,217 +3,459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free 15-Minute Consultation | Hawkins Counseling</title>
-    <meta name="description" content="Not sure where to start? Book a free 15-minute consultation with B. Keith Hawkins, DCCC — Christ-centered counseling for individuals, couples & families via secure telehealth. Se habla español.">
-    <link rel="canonical" href="https://hawkinscounseling.org/free-consultation/">
+    <title>Hawkins Counseling | B. Keith Hawkins, DCCC</title>
+    <meta name="description" content="Christ-centered counseling for individuals, couples & families in Rockwall, Texas. Temperament therapy (APS), cognitive therapy & family counseling via secure telehealth. B. Keith Hawkins, DCCC, Licensed Clinical Pastoral Counselor (NCCA). Se habla español.">
+    <link rel="canonical" href="https://hawkinscounseling.org/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Hawkins Counseling">
-    <meta property="og:title" content="Free 15-Minute Consultation | Hawkins Counseling">
-    <meta property="og:description" content="Talk with B. Keith Hawkins, DCCC, about what's on your heart — no pressure, no obligation. Christ-centered counseling via secure telehealth. Se habla español.">
-    <meta property="og:url" content="https://hawkinscounseling.org/free-consultation/">
+    <meta property="og:title" content="Hawkins Counseling | B. Keith Hawkins, DCCC">
+    <meta property="og:description" content="Christ-centered counseling for individuals, couples & families. Temperament therapy, cognitive therapy & family counseling via secure telehealth. Rockwall, Texas. Se habla español.">
+    <meta property="og:url" content="https://hawkinscounseling.org/">
     <meta name="twitter:card" content="summary">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta name="twitter:title" content="Hawkins Counseling | B. Keith Hawkins, DCCC">
+    <meta name="twitter:description" content="Christ-centered counseling in Rockwall, Texas, via secure telehealth. Temperament therapy (APS), cognitive therapy & family counseling. Se habla español.">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Hawkins Counseling",
-        "url": "https://hawkinscounseling.org/free-consultation/",
+        "url": "https://hawkinscounseling.org/",
         "telephone": "+1-972-814-6872",
         "email": "bkhawkins@hawkinscounseling.net",
-        "founder": { "@type": "Person", "name": "B. Keith Hawkins", "jobTitle": "Licensed Clinical Pastoral Counselor" },
-        "address": { "@type": "PostalAddress", "addressLocality": "Rockwall", "addressRegion": "TX", "addressCountry": "US" },
+        "founder": {
+            "@type": "Person",
+            "name": "B. Keith Hawkins",
+            "jobTitle": "Licensed Clinical Pastoral Counselor"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rockwall",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
         "areaServed": "Texas",
-        "description": "Free 15-minute consultation. Christ-centered counseling for individuals, couples and families via secure telehealth. Se habla español."
+        "description": "Christ-centered counseling for individuals, couples and families. Temperament therapy (Arno Profile System), cognitive therapy and family counseling via secure telehealth. Se habla español."
     }
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
-        :root { --primary: #1a365d; --secondary: #c5a059; --accent: #f8f4eb; }
-        body { font-family: 'Lato', sans-serif; scroll-behavior: smooth; }
-        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
-        .hero-gradient {
-            background: linear-gradient(rgba(26, 54, 93, 0.88), rgba(26, 54, 93, 0.88)), url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80');
-            background-size: cover; background-position: center;
+
+        :root {
+            --primary: #1a365d;
+            --secondary: #c5a059;
+            --accent: #f8f4eb;
         }
-        .text-primary { color: var(--primary); }
-        .bg-primary { background-color: var(--primary); }
-        .bg-secondary { background-color: var(--secondary); }
-        .bg-accent { background-color: var(--accent); }
-        .border-secondary { border-color: var(--secondary); }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        
+        .video-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Nav -->
-    <nav class="w-full bg-white/95 shadow-sm border-b border-slate-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="https://hawkinscounseling.org/" class="text-primary font-bold text-xl tracking-wider uppercase">Hawkins Counseling</a>
-                <a href="https://hawkinscounseling.org/" class="text-sm font-semibold text-primary hover:underline"><i class="fas fa-arrow-left mr-2"></i>Back to main site</a>
-            </div>
-        </div>
-    </nav>
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="text-primary font-bold text-xl tracking-wider uppercase">Hawkins Counseling</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8"> 
+            <a href="#home" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Home</a> 
+            <a href="#specialties" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Specialties</a> 
+            <a href="#about" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">About</a> 
+            <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Video Resources</a> 
+            <a href="#contact" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Connect</a>
+            <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Book Now</a> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+    
+    <!-- Pure HTML Mobile Dropdown Menu Logic -->
+    <div class="md:hidden absolute right-4 top-5 group">
+      <!-- The visible toggle button inside header -->
+      <button class="text-primary p-2 focus:outline-none focus:ring-2 focus:ring-primary rounded-lg border border-slate-200 bg-white shadow-sm flex items-center gap-2">
+        <i class="fas fa-bars text-xl"></i>
+        <span class="text-xs font-bold uppercase tracking-wider">Menu</span>
+      </button>
+      
+            <!-- The mobile links container dropdown --> 
+      <div id="mobileDropdownMenu" class="hidden flex-col absolute right-0 top-full mt-2 w-64 bg-white border border-slate-100 rounded-2xl shadow-xl p-3 space-y-2 z-50"> 
+        <a href="#home" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
+        <a href="#specialties" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
+        <a href="#about" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
+        <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Video Resources</a> 
+        <a href="#contact" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Connect</a> 
+        <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
+      </div>
 
-    <!-- Hero -->
-    <section class="hero-gradient text-center text-white px-4 py-24 md:py-32">
-        <div class="max-w-3xl mx-auto">
-            <p class="uppercase tracking-widest text-sm mb-4 text-slate-300">Free 15-Minute Consultation</p>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Not sure where to start?<br>Let's talk.</h1>
-            <p class="text-lg md:text-xl mb-10 text-slate-200 font-light leading-relaxed">
-                A relaxed, no-pressure conversation with B. Keith Hawkins about what's on your heart —
-                and whether counseling is the right next step for you.
+      <script>
+        // Connects your menu button directly to the open/close function
+        const menuBtn = document.querySelector('.md\\:hidden.absolute.right-4.top-5 button');
+        if (menuBtn) {
+          menuBtn.setAttribute('onclick', 'toggleMenu()');
+        }
+
+        function toggleMenu() {
+          const menu = document.getElementById('mobileDropdownMenu');
+          if (menu) {
+            if (menu.classList.contains('hidden')) {
+              menu.classList.remove('hidden');
+              menu.classList.add('flex');
+            } else {
+              menu.classList.remove('flex');
+              menu.classList.add('hidden');
+            }
+          }
+        }
+      </script>
+    </div>
+  </div> 
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-center text-white px-4 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-7xl font-bold mb-6">B. Keith Hawkins, DCCC</h1>
+            <p class="text-lg md:text-xl mb-10 text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                Licensed Clinical Pastoral Counselor with the National Christian Counselors Association. 
+                Guiding you toward healing, clarity, and spiritual wholeness through Christ-centered temperament therapy.
             </p>
-            <a href="#request" class="inline-block bg-secondary text-white px-12 py-4 rounded-lg hover:bg-opacity-90 transition font-bold text-lg shadow-xl">
-                Request My Free Consultation
-            </a>
-            <p class="mt-6 text-slate-300 text-sm">Prefer to book directly? <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="underline font-semibold">Book an appointment</a> or call <a href="tel:+19728146872" class="underline font-semibold">(972) 814-6872</a></p>
+            <p class="text-sm md:text-base mb-10 text-slate-300 max-w-2xl mx-auto font-light tracking-wide">
+                Based in Rockwall, Texas &mdash; serving clients across Texas via secure telehealth. Se habla espa&ntilde;ol.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="bg-secondary text-white px-12 py-4 rounded-lg hover:bg-opacity-90 transition font-bold text-lg shadow-xl">
+                    Book an Appointment
+                </a>
+                <a href="https://hawkinscounseling.org/free-consultation/" class="border-2 border-white text-white px-12 py-4 rounded-lg hover:bg-white hover:text-primary transition font-bold text-lg">
+                    Free 15-Min Consultation
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- How it works -->
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-14">
-                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+    <!-- Specialties Section -->
+    <section id="specialties" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-4">Specializing In</h2>
                 <div class="w-20 h-1 bg-secondary mx-auto"></div>
             </div>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 bg-accent rounded-2xl border border-slate-100 text-center">
-                    <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-5 text-xl font-bold">1</div>
-                    <h3 class="text-xl font-bold mb-3 text-primary">Tell us about yourself</h3>
-                    <p class="text-slate-600">Fill out the short form below — it takes less than two minutes.</p>
+                <div class="p-8 bg-accent rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Temperament Therapy</h3>
+                    <p class="text-slate-600 leading-relaxed">Understanding your God-given temperament to resolve inner conflict and improve relationships using the Arno Profile System (APS).</p>
                 </div>
-                <div class="p-8 bg-accent rounded-2xl border border-slate-100 text-center">
-                    <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-5 text-xl font-bold">2</div>
-                    <h3 class="text-xl font-bold mb-3 text-primary">We'll reach out</h3>
-                    <p class="text-slate-600">Keith will contact you within one business day to set up a time to talk.</p>
+
+                <div class="p-8 bg-accent rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-cross text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Cognitive Therapy</h3>
+                    <p class="text-slate-600 leading-relaxed">Renewing the mind by aligning thought patterns with Biblical truth to find lasting mental clarity and emotional peace.</p>
                 </div>
-                <div class="p-8 bg-accent rounded-2xl border border-slate-100 text-center">
-                    <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-5 text-xl font-bold">3</div>
-                    <h3 class="text-xl font-bold mb-3 text-primary">Talk it through</h3>
-                    <p class="text-slate-600">A relaxed 15-minute conversation. No pressure, no obligation — just clarity.</p>
+
+                <div class="p-8 bg-accent rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Family Counseling</h3>
+                    <p class="text-slate-600 leading-relaxed">Strengthening family bonds and healing dynamics through compassionate communication and spiritual guidance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Who it's for -->
-    <section class="py-20 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-primary text-3xl md:text-4xl font-bold mb-4">Is This For You?</h2>
-            <div class="w-20 h-1 bg-secondary mx-auto mb-10"></div>
-            <div class="grid sm:grid-cols-2 gap-6 text-left">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <p class="text-slate-700"><i class="fas fa-check text-secondary mr-3"></i>You're carrying stress, anxiety, or grief and want a faith-based perspective.</p>
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative group">
+                        <!-- Decorative Frame -->
+                        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-secondary rounded-2xl"></div>
+                        
+                        <!-- Video Player -->
+                        <div class="relative z-10 rounded-2xl overflow-hidden bg-black aspect-video video-shadow">
+                            <video 
+                                controls 
+                                preload="metadata"
+                                poster="image_76ecdd.png"
+                                class="w-full h-full object-cover">
+                                <source src="Healing_the_Family.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="relative z-10 mt-4 text-center text-xs text-slate-400 font-bold uppercase tracking-widest">Featured: Healing the Family</p>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <p class="text-slate-700"><i class="fas fa-check text-secondary mr-3"></i>Your marriage or family relationships feel strained and you want tools that work.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <p class="text-slate-700"><i class="fas fa-check text-secondary mr-3"></i>You're curious about temperament therapy and what the Arno Profile System could reveal.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <p class="text-slate-700"><i class="fas fa-check text-secondary mr-3"></i>You've thought about counseling before but weren't sure it was for you.</p>
-                </div>
-            </div>
-            <p class="mt-10 text-slate-600 italic serif text-lg">"I am fearfully and wonderfully made." — Psalm 139:14</p>
-        </div>
-    </section>
-
-    <!-- Form -->
-    <section id="request" class="py-20 bg-white">
-        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-4">Request Your Free Consultation</h2>
-                <div class="w-20 h-1 bg-secondary mx-auto mb-4"></div>
-                <p class="text-slate-600">Everything you share is confidential.</p>
-            </div>
-            <form action="https://formsubmit.co/bkhawkins@hawkinscounseling.net" method="POST" class="bg-accent p-8 rounded-2xl border border-slate-100 shadow-sm space-y-6">
-                <input type="hidden" name="_subject" value="New free consultation request — Hawkins Counseling">
-                <input type="hidden" name="_next" value="https://hawkinscounseling.org/thank-you/">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display:none">
-                <div>
-                    <label for="name" class="block text-sm font-bold text-primary mb-2">Full name *</label>
-                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary">
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-bold text-primary mb-2">Email *</label>
-                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary">
-                </div>
-                <div>
-                    <label for="phone" class="block text-sm font-bold text-primary mb-2">Phone <span class="font-normal text-slate-500">(optional)</span></label>
-                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary">
-                </div>
-                <div>
-                    <label for="interest" class="block text-sm font-bold text-primary mb-2">What would you like help with? *</label>
-                    <select id="interest" name="interest" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary bg-white">
-                        <option value="">Choose one…</option>
-                        <option>Individual counseling</option>
-                        <option>Couples / marriage counseling</option>
-                        <option>Family counseling</option>
-                        <option>Temperament (APS) profile</option>
-                        <option>Not sure yet</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-bold text-primary mb-2">Anything you'd like Keith to know? <span class="font-normal text-slate-500">(optional)</span></label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-secondary text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition font-bold text-lg shadow-lg">
-                    Request My Free Consultation
-                </button>
-                <p class="text-xs text-slate-500 text-center">By submitting, you agree to be contacted about your request. Your information stays private.</p>
-            </form>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-20 bg-slate-50">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-4">Common Questions</h2>
-                <div class="w-20 h-1 bg-secondary mx-auto"></div>
-            </div>
-            <div class="space-y-4">
-                <div class="bg-white p-6 rounded-xl border border-slate-100">
-                    <h3 class="font-bold text-primary mb-2">Is the consultation really free?</h3>
-                    <p class="text-slate-600">Yes — 15 minutes, no charge, no obligation. It's simply a chance to talk and see if counseling is a good fit.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100">
-                    <h3 class="font-bold text-primary mb-2">Is what I share confidential?</h3>
-                    <p class="text-slate-600">Absolutely. Everything you share — on the call and in the form — is kept private.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100">
-                    <h3 class="font-bold text-primary mb-2">Do I have to be a Christian?</h3>
-                    <p class="text-slate-600">No. The counseling is Christ-centered, and everyone is welcome — wherever you are in your faith journey.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl border border-slate-100">
-                    <h3 class="font-bold text-primary mb-2">Where do sessions take place?</h3>
-                    <p class="text-slate-600">Sessions are held via secure telehealth, so you can meet from anywhere in Texas. ¿Se habla español? Sí.</p>
+                <div class="md:w-1/2">
+                    <h2 class="text-primary text-3xl font-bold mb-6">Meet B. Keith Hawkins, DCCC</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        As a Licensed Clinical Pastoral Counselor with the NCCA, I am dedicated to providing a safe, confidential, and professional environment for individuals and families to navigate life's challenges with faith and purpose.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        My approach is grounded in the belief that every person is uniquely created. By integrating proven clinical temperament therapy with sound Biblical principles, we work together toward wholeness and renewed hope.
+                    </p>
+                    <div class="bg-white p-6 rounded-xl border-l-4 border-secondary shadow-sm">
+                        <p class="text-sm font-bold text-primary italic">Licensed by the National Christian Counselors Association</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+<!-- Videos Section -->
+<section id="videos" class="py-24 bg-[#f8f4eb]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-primary tracking-tight sm:text-5xl">Video Resources</h2>
+      <p class="mt-4 text-xl text-slate-600 font-medium">Explore our 15-part video series mapping out the distinct temperaments.</p>
+    </div>
+    
+    <div class="space-y-12">
+      <!-- Video 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">1. Phlegmatic in Inclusion</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="1._Phlegmatic_in_Inclusion[1].mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-    <!-- About strip -->
-    <section class="py-16 bg-primary text-white">
-        <div class="max-w-3xl mx-auto px-4 text-center">
-            <h2 class="serif text-2xl md:text-3xl font-bold mb-4">B. Keith Hawkins, DCCC</h2>
-            <p class="text-slate-200 font-light leading-relaxed">Licensed Clinical Pastoral Counselor (NCCA) · Certified Temperament Counselor · Advanced Certification in Cognitive Therapy and Integrated Marriage &amp; Family Therapy. Serving Rockwall, Texas and clients across Texas via secure telehealth.</p>
+      <!-- Video 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">2. Supine in Inclusion</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="2._Supine_in_Inclusion[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">3. Choleric in Inclusion</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="3._Choleric_in_Inclusion[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">4. Melancholy in Inclusion</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="4._Melancholy_in_Inclusion[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">5. Sanguine in Inclusion</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="5._Sanguine_in_Inclusion[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">6. Phlegmatic in Control</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="6._Phlegmatic_in_Control[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 7 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">7. Supine in Control</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="7._Supine_in_Control[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 8 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">8. Melancholy in Control</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="8._Melancholy_in_Control[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 9 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">9. Choleric in Control</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="9._Choleric_in_Control[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 10 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">10. Sanguine in Control</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="10._Sanguine_in_Control[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 11 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">11. Phlegmatic in Affection</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="11._Phlegmatic_in_Affection[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 12 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">12. Supine in Affection</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="12._Supine_in_Affection[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 13 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">13. Melancholy in Affection</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="13._Melancholy_in_Affection[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 14 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">14. Choleric in Affection</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="14._Choleric_in_Affection[1].mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 15 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-100">
+        <h3 class="text-xl font-bold text-primary mb-4">15. Sanguine in Affection</h3>
+        <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
+          <source src="15._Sanguine_in_Affection[1].mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Contact & Form Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
+                
+                <!-- Contact Sidebar -->
+                <div class="lg:w-2/5 bg-[#f8f4eb] p-12 text-primary">
+                    <h3 class="text-3xl font-bold mb-6">Connect With Us</h3>
+                    <p class="text-slate-700 font-medium mb-12">Take the first step toward healing. Reach out via phone, email, or by filling out the inquiry form.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-5">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white shadow-lg">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-black tracking-widest uppercase mb-1">CALL OR TEXT</p>
+                                <a href="tel:9728146872" class="text-xl font-bold text-primary hover:text-secondary transition underline underline-offset-4 decoration-secondary/60">972-814-6872</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white shadow-lg">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <p class="text-xs text-slate-500 font-black tracking-widest uppercase mb-1">EMAIL ADDRESS</p>
+                                <a href="mailto:bkhawkins@hawkinscounseling.net" class="text-base font-bold text-primary hover:text-secondary transition break-all underline underline-offset-4 decoration-secondary/60">bkhawkins@hawkinscounseling.net</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 pt-8 border-t border-slate-200">
+                        <p class="italic text-slate-600 font-semibold text-sm">"The Lord is near to the brokenhearted and saves the crushed in spirit." — Psalm 34:18</p>
+                    </div>
+                </div>
+
+                <div class="lg:w-3/5 p-12 bg-white">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Inquiry Form</h3>
+                    <form class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                            <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Your Email Address</label>
+                                <input type="email" name="email" required placeholder="name@example.com" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Your Phone Number</label>
+                                <input type="tel" name="phone" required placeholder="555-555-5555" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Service of Interest</label>
+                            <select name="service" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                                <option>Temperament Therapy</option>
+                                <option>Cognitive Therapy</option>
+                                <option>Family Counseling</option>
+                                <option>Other / General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">How can we help?</label>
+                            <textarea name="message" rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-secondary/20 outline-none transition" placeholder="Tell us how we can support your journey..."></textarea>
+                        </div>
+                        <a href="mailto:bkhawkins@hawkinscounseling.net" class="block w-full bg-slate-500 text-white py-4 rounded-xl font-bold hover:bg-slate-600 transition shadow-lg text-lg text-center">
+                            Send Message
+                        </a>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-300 py-10">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="font-bold text-white tracking-wider uppercase mb-2">Hawkins Counseling</p>
-            <p class="text-sm">Rockwall, Texas · <a href="tel:+19728146872" class="underline">(972) 814-6872</a> · <a href="mailto:bkhawkins@hawkinscounseling.net" class="underline">bkhawkins@hawkinscounseling.net</a></p>
-            <p class="text-xs mt-4 text-slate-500">© 2026 Hawkins Counseling. All rights reserved.</p>
+    <footer class="bg-slate-50 py-16 text-center border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-primary font-bold text-2xl mb-4 tracking-widest uppercase">Hawkins Counseling</div>
+            <p class="text-slate-500 text-sm mb-2 font-medium">B. Keith Hawkins, DCCC | Licensed Clinical Pastoral Counselor</p>
+            <p class="text-slate-500 text-sm mb-2 font-medium">Rockwall, Texas &mdash; Secure telehealth available &mdash; Se habla espa&ntilde;ol</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-4 mt-2 text-sm text-slate-600">
+                <a href="tel:9728146872" class="hover:text-primary transition"><i class="fas fa-phone-alt mr-2 text-secondary"></i>972-814-6872</a>
+                <a href="mailto:bkhawkins@hawkinscounseling.net" class="hover:text-primary transition"><i class="fas fa-envelope mr-2 text-secondary"></i>bkhawkins@hawkinscounseling.net</a>
+            </div>
+            <p class="text-slate-400 text-xs mb-4 uppercase tracking-tighter">National Christian Counselors Association Member</p>
+            <p class="text-slate-400 text-xs mb-4 uppercase tracking-tighter">NPI: 1215868377</p>
+            <div class="w-12 h-1 bg-secondary mx-auto mb-4"></div>
+            <p class="text-xs text-slate-400 italic mb-2">"Fearfully and Wonderfully Made" — Psalm 139:14</p>
+            <p class="text-[10px] text-slate-300 uppercase tracking-widest">&copy; 2026 Hawkins Counseling. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
