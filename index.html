@@ -44,7 +44,20 @@
         }
     }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = { theme: { extend: { colors: { primary: '#1a365d', secondary: '#c5a059', accent: '#f8f4eb' } } } }</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#c5a059',
+                        accent: '#f8f4eb'
+                    }
+                }
+            }
+        }
+    </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
@@ -94,10 +107,11 @@
             <a href="#home" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Home</a> 
             <a href="#specialties" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Specialties</a> 
             <a href="#about" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">About</a> 
-            <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Video Resources</a><a href="https://king-and-me-app.lovable.app" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Devotional App</a> 
+            <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Video Resources</a> 
+            <a href="https://king-and-me-app.lovable.app" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Devotional App</a> 
             <a href="#contact" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Connect</a>
             <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 px-4 py-2 rounded-full text-sm font-semibold transition">Book Now</a> 
-                        <a href="es.html" class="border border-secondary text-secondary hover:bg-secondary/10 px-4 py-2 rounded-full text-sm font-semibold transition">Español</a>
+            <a href="es.html" class="border border-secondary text-secondary hover:bg-secondary/10 px-4 py-2 rounded-full text-sm font-semibold transition">Español</a> 
           </div> 
         </div> 
       </div> 
@@ -116,11 +130,11 @@
         <a href="#home" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Home</a> 
         <a href="#specialties" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Specialties</a> 
         <a href="#about" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">About</a> 
-        <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Video Resources</a>
+        <a href="#videos" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Video Resources</a> 
         <a href="https://king-and-me-app.lovable.app" target="_blank" rel="noopener noreferrer" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Devotional App</a> 
         <a href="#contact" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Connect</a> 
         <a href="https://book.carepatron.com/B--Keith-Hawkins/Keith?p=94SZiYkwSfOwb60Dwl2Z0Q&s=XVl-35g2" target="_blank" rel="noopener noreferrer" onclick="toggleMenu()" class="border border-primary text-primary hover:bg-primary/5 block px-4 py-2 rounded-full text-sm font-semibold transition text-center">Book Now</a> 
-          <a href="es.html" class="border border-secondary text-secondary hover:bg-secondary/10 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Español</a>
+        <a href="es.html" class="border border-secondary text-secondary hover:bg-secondary/10 block px-4 py-2 rounded-full text-sm font-semibold transition text-center" onclick="toggleMenu()">Español</a> 
       </div>
 
       <script>
@@ -259,6 +273,14 @@
           <source src="1._Phlegmatic_in_Inclusion[1].mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 17:27</span> — “Whoever restrains his words has knowledge.”</li>
+            <li><span class="font-semibold text-primary">Ecclesiastes 3:7</span> — “A time to keep silence, and a time to speak.”</li>
+            <li><span class="font-semibold text-primary">James 1:19</span> — “Be quick to hear, slow to speak, slow to anger.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 2 -->
@@ -267,6 +289,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="2._Supine_in_Inclusion[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Mark 10:45</span> — “The Son of Man came not to be served but to serve.”</li>
+            <li><span class="font-semibold text-primary">Galatians 5:13</span> — “Through love serve one another.”</li>
+            <li><span class="font-semibold text-primary">Philippians 2:3</span> — “In humility count others more significant than yourselves.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 3 -->
@@ -275,6 +305,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="3._Choleric_in_Inclusion[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 16:18</span> — “Pride goes before destruction.”</li>
+            <li><span class="font-semibold text-primary">Matthew 20:26</span> — “Whoever would be great among you must be your servant.”</li>
+            <li><span class="font-semibold text-primary">1 Peter 5:3</span> — “Not domineering over those in your charge, but being examples to the flock.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 4 -->
@@ -283,6 +321,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="4._Melancholy_in_Inclusion[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Psalm 139:14</span> — “I am fearfully and wonderfully made.”</li>
+            <li><span class="font-semibold text-primary">Romans 15:7</span> — “Welcome one another as Christ has welcomed you.”</li>
+            <li><span class="font-semibold text-primary">Jeremiah 29:11</span> — “Plans for welfare, to give you a future and a hope.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 5 -->
@@ -291,6 +337,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="5._Sanguine_in_Inclusion[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 10:19</span> — “Whoever restrains his lips is prudent.”</li>
+            <li><span class="font-semibold text-primary">Proverbs 15:23</span> — “A word in due season, how good it is!”</li>
+            <li><span class="font-semibold text-primary">Ecclesiastes 5:2</span> — “Be not rash with your mouth; let your words be few.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 6 -->
@@ -299,6 +353,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="6._Phlegmatic_in_Control[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 6:6</span> — “Go to the ant, O sluggard; consider her ways, and be wise.”</li>
+            <li><span class="font-semibold text-primary">Proverbs 13:4</span> — “The soul of the diligent is richly supplied.”</li>
+            <li><span class="font-semibold text-primary">Colossians 3:23</span> — “Whatever you do, work heartily, as for the Lord.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 7 -->
@@ -307,6 +369,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="7._Supine_in_Control[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">2 Timothy 1:7</span> — “God gave us a spirit not of fear but of power and love and self-control.”</li>
+            <li><span class="font-semibold text-primary">Joshua 1:9</span> — “Be strong and courageous, for the LORD your God is with you.”</li>
+            <li><span class="font-semibold text-primary">Proverbs 3:5-6</span> — “Trust in the LORD with all your heart, and he will make straight your paths.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 8 -->
@@ -315,6 +385,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="8._Melancholy_in_Control[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Psalm 37:5</span> — “Commit your way to the LORD; trust in him, and he will act.”</li>
+            <li><span class="font-semibold text-primary">Proverbs 16:3</span> — “Commit your work to the LORD, and your plans will be established.”</li>
+            <li><span class="font-semibold text-primary">Matthew 6:34</span> — “Do not be anxious about tomorrow.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 9 -->
@@ -323,6 +401,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="9._Choleric_in_Control[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 16:9</span> — “The heart of man plans his way, but the LORD establishes his steps.”</li>
+            <li><span class="font-semibold text-primary">James 4:15</span> — “If the Lord wills, we will live and do this or that.”</li>
+            <li><span class="font-semibold text-primary">Micah 6:8</span> — “Do justice, love kindness, and walk humbly with your God.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 10 -->
@@ -331,6 +417,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="10._Sanguine_in_Control[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 19:2</span> — “Desire without knowledge is not good, and whoever makes haste with his feet misses his way.”</li>
+            <li><span class="font-semibold text-primary">Proverbs 21:5</span> — “The plans of the diligent lead to abundance, but haste comes only to poverty.”</li>
+            <li><span class="font-semibold text-primary">James 1:5</span> — “If any of you lacks wisdom, let him ask God, and it will be given him.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 11 -->
@@ -339,6 +433,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="11._Phlegmatic_in_Affection[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">1 Corinthians 13:4</span> — “Love is patient and kind.”</li>
+            <li><span class="font-semibold text-primary">1 John 3:18</span> — “Let us not love in word or talk but in deed and in truth.”</li>
+            <li><span class="font-semibold text-primary">Song of Solomon 8:7</span> — “Many waters cannot quench love.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 12 -->
@@ -347,6 +449,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="12._Supine_in_Affection[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Romans 8:38-39</span> — “Nothing will be able to separate us from the love of God in Christ Jesus.”</li>
+            <li><span class="font-semibold text-primary">1 John 4:19</span> — “We love because he first loved us.”</li>
+            <li><span class="font-semibold text-primary">Zephaniah 3:17</span> — “He will exult over you with loud singing.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 13 -->
@@ -355,6 +465,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="13._Melancholy_in_Affection[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Psalm 34:18</span> — “The LORD is near to the brokenhearted.”</li>
+            <li><span class="font-semibold text-primary">Isaiah 41:10</span> — “Fear not, for I am with you.”</li>
+            <li><span class="font-semibold text-primary">Psalm 147:3</span> — “He heals the brokenhearted and binds up their wounds.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 14 -->
@@ -363,6 +481,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="14._Choleric_in_Affection[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Ephesians 4:32</span> — “Be kind to one another, tenderhearted, forgiving one another.”</li>
+            <li><span class="font-semibold text-primary">Colossians 3:19</span> — “Husbands, love your wives, and do not be harsh with them.”</li>
+            <li><span class="font-semibold text-primary">1 Peter 3:7</span> — “Live with your wives in an understanding way, showing honor.”</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Video 15 -->
@@ -371,6 +497,14 @@
         <video width="100%" controls preload="metadata" class="rounded-xl shadow-inner">
           <source src="15._Sanguine_in_Affection[1].mp4" type="video/mp4">
         </video>
+        <div class="mt-5 pt-4 border-t border-slate-100">
+          <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Scriptures for this profile</p>
+          <ul class="text-sm text-slate-600 space-y-2 text-left">
+            <li><span class="font-semibold text-primary">Proverbs 17:17</span> — “A friend loves at all times.”</li>
+            <li><span class="font-semibold text-primary">1 Corinthians 13:7</span> — “Love bears all things, believes all things, hopes all things, endures all things.”</li>
+            <li><span class="font-semibold text-primary">Ruth 1:16</span> — “Where you go I will go, and where you lodge I will lodge.”</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -394,7 +528,6 @@
             </div>
         </div>
     </section>
-
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
