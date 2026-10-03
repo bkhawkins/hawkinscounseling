@@ -7,6 +7,18 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://hawkinscounseling.org/wilderness-devotional/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hawkinscounseling.org/studies/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://hawkinscounseling.org/free-consultation/</loc>
         <lastmod>2026-09-15</lastmod>
         <changefreq>monthly</changefreq>
